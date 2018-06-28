@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background: white;
+}
+
+.header{
+    top: 0;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    height: 520px;
+}
+
+.slide-pic {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 520px;
+}
+
+.img-container-1 img {
+    display: none;
+    width: 100%;
+    height: 500px;
+}
+
+.img-container-2 img {
+    display: none;
+    height: 500px;
+    width: 100%;
+}
+.img-container-3 {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    right: 10%;
+    left: 10%;
+    box-sizing: border-box;
+    width: 80%;
+    box-shadow: 0px 3px 3px  gray;
+
+}
+.img-container-3 img {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 500px;
+    margin: 0;
+}
+
+.img-container-4 img {
+    display: none;
+    width: 100%;
+    height: 500px;
+}
+
+.dot-container {
+    position:absolute;
+    top: 505px;
+    left: 45%;
+    width: 10%;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.dot {
+    border: gray;
+    background: gray;
+    border-radius: 50%;
+    margin: 1px;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    opacity: 0.3;
+    transition: opacity 1s;
+}
+
+.dot:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.nav{
+    position: relative;
+    display: inline-block;
+    top: 20px;
+    width: 100%;
+    background: grey;
+    overflow: visible;
+    border-radius: 3px;
+    height: 35px;
+    box-sizing: border-box;
+    padding-top: 3px;
+    padding-left: 3px;
+    background: linear-gradient(to right, hsla(113, 77%, 37%, 0.4),white);
+
+}
+
+
+.visiable-nav{
+    display: inline-block;
+    font-size: 25px;
+    float: left;
+    padding-right: 20px ;
+    text-align: center;
+    font-family: "Book Antiqua";
+    color: snow;
+
+}
+
+.visiable-nav:hover{
+    cursor: pointer;
+    color: #8c7095;
+}
+
+.visiable-nav:hover .hidden-nav{
+    display: block;
+}
+
+.hidden-nav{
+    display: none;
+    background: linear-gradient(to right, hsla(113, 77%, 37%, 0.4),white);
+    border-radius: 0 0 3% 3%;
+    box-shadow: 0 3px 3px hsla(113, 77%, 37%, 0.4);
+
+}
+
+.hidden-nav a:hover{
+    cursor: pointer;
+    color: #8c7095;
+}
+
+
+.hidden-nav a{
+    display:block;
+    text-decoration:none;
+    text-align: left;
+    color: snow;
+}
+
+.body{
+    position: relative;
+    top: 100px;
+}
+
+.footer{
+    position: relative;
+}
+
+
+.next-pic{
+    right: 2.5%;
+    position: absolute;
+    top: 40%;
+    font-size: 400%;
+    opacity: 0;
+    transition: opacity 1s;
+    color: chartreuse;
+}
+.next-pic:hover{
+    opacity: 1;
+}
+.pre-pic:hover{
+    opacity: 1;
+}
+.pre-pic{
+    transition: opacity 1s;
+    position: absolute;
+    top: 40%;
+    left: 2.5%;
+    font-size: 400%;
+    color: chartreuse;
+    opacity: 0;
+}
+
+
+
+
