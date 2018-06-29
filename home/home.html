@@ -12,8 +12,8 @@
 <body>
 <div class="header">
     <div class="slide-pic">
-        <span class="next-pic"><i class="fas fa-arrow-right"></i></span>
-        <span class="pre-pic"><i class="fas fa-arrow-left"></i></span>
+        <span class="next-pic" onclick="nextPic()"><i class="fas fa-arrow-right"></i></span>
+        <span class="pre-pic" onclick="prePic()"><i class="fas fa-arrow-left"></i></span>
         <div class="img-container-1">
             <img src="../src/wp2003324.jpg" alt="">
         </div>
@@ -59,7 +59,7 @@
     </span>
 </div>
 <div class="body">
-    <h1>Nội dung phổ biến</h1>
+    <h1 style="font-family: Bahnschrift">Nội dung phổ biến</h1>
     <div class="trending">
         <div class="trending">
             <div class="row-1">
@@ -124,21 +124,6 @@
         <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
     </footer>
 </div>
-<script>
-    showPic = (n)=>{
-        var a = "img-container-" + n.toString();
-        console.log(typeof a);
-        var tmp =document.getElementsByClassName(a);
-        var tmp1 =document.getElementsByClassName("img-container-1");
-        var tmp2 =document.getElementsByClassName("img-container-2");
-        var tmp3 =document.getElementsByClassName("img-container-3");
-        var tmp4 =document.getElementsByClassName("img-container-4");
-        tmp1[0].getElementsByTagName("img")[0].style.display="none";
-        tmp2[0].getElementsByTagName("img")[0].style.display="none";
-        tmp3[0].getElementsByTagName("img")[0].style.display="none";
-        tmp4[0].getElementsByTagName("img")[0].style.display="none";
-        tmp[0].getElementsByTagName("img")[0].style.display="block";
-    }
-</script>
+<script src="home.js"></script>
 </body>
 </html>

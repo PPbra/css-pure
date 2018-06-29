@@ -6,6 +6,7 @@
 body{
     padding: 0;
     margin: 0;
+    height: 10000px;
 }
 .header {
     position: relative;
@@ -13,7 +14,7 @@ body{
     height: 300px;
     overflow: hidden;
     margin-bottom: 4px;
-    box-shadow: 0px 5px 3px grey;
+    box-shadow: 0px 1px 1px grey;
 }
 
 .header #header-background{
@@ -35,4 +36,65 @@ body{
 }
 
 
+.nav{
+    margin-top: 10px;
+    position: sticky;
+    display: inline-block;
+    top: 0px;
+    width: 100%;
+    background: grey;
+    overflow: visible;
+    border-radius: 3px;
+    height: 35px;
+    box-sizing: border-box;
+    padding-top: 3px;
+    padding-left: 3px;
+    background: linear-gradient(to right, black,white);
+    z-index: 1;
+    margin-bottom: -80px;
+
+}
+
+
+.visiable-nav{
+    display: inline-block;
+    font-size: 25px;
+    float: left;
+    padding-right: 20px ;
+    text-align: center;
+    font-family: Bahnschrift;
+    color: snow;
+
+}
+
+.visiable-nav:hover{
+    cursor: pointer;
+    color: #8c7095;
+}
+
+.visiable-nav:hover .hidden-nav{
+    display: block;
+}
+
+.hidden-nav{
+    display: none;
+    background: linear-gradient(to right, black,white);
+    border-radius: 0 0 3% 3%;
+    box-shadow: 0 3px 3px grey;
+
+}
+
+.hidden-nav a:hover{
+    cursor: pointer;
+    color: #8c7095;
+}
+
+
+.hidden-nav a{
+    display:block;
+    text-decoration:none;
+    text-align: left;
+    color: snow;
+    font-family: Bahnschrift;
+}
 
