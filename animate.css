@@ -1,0 +1,108 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.page-header {
+    height: 100vh;
+    background-image: url("http://www.intertech.ps/images1/home_sec.jpg");
+    background-size: cover;
+}
+
+.page-header::after {
+    animation: grain 1s steps 10s infinite;
+    background-image: url(grain.png);
+    content: "";
+    height: 300%;
+    left: -50%;
+    opacity: 0.48;
+    position: fixed;
+    top: -110%;
+    weight: 300%;
+}
+
+@keyframes grain {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(-5%, -10%);
+    }
+    20% {
+        transform: translate(-15%, 5%);
+    }
+    30% {
+        transform: translate(-10%, 7%);
+    }
+    40% {
+        transform: translate(-5%, 25%);
+    }
+    50% {
+        transform: translate(-15%, 10%);
+    }
+    60% {
+        transform: translate(10%, -10%);
+    }
+    70% {
+        transform: translate(5%, -17%);
+    }
+    80% {
+        transform: translate(15%, -5%);
+    }
+    90% {
+        transform: translate(-14%, 4%);
+    }
+}
+
+.content {
+    position: absolute;
+    top: 36%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: Poppins;
+    z-index: 1;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0;
+    color: #8300f7;
+}
+
+p {
+    margin-top: 0;
+    width: 80%;
+    font-weight: lighter;
+}
+
+.btn {
+    margin-top: 64px;
+}
+
+a {
+    border: 2px solid #ffffff;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 4px;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 16px 42px;
+}
+
+.delay-1 {
+    animation-delay: 2s;
+}
+
+.delay-2 {
+    animation-delay: 2.2s;
+}
+
+.delay-3 {
+    animation-delay: 2.4s;
+}
